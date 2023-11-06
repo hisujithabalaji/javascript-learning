@@ -1,0 +1,23 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title></title>
+        <link rel="stylesheet" href="">
+      </head>
+      <body>
+        <button onclick="hello()">Add Hello</button>
+        <div id="result"></div>
+
+        <script>
+            var resultElement = document.getElementById("result")
+
+            function hello() {
+                // resultElement.textContent = "Hello"
+                // resultElement.append("\nHello")
+                var newh1 = document.createElement("h1")
+                newh1.textContent = "Hello"
+                resultElement.append(newh1)
+            }
+        </script>
+      </body>
+    </html>    

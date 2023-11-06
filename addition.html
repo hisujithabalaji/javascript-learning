@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Addition</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button onclick="resultfunc()">Add</button>
+        <p >Result <span id="result"></span></p>
+
+        <script>
+
+            //selecting input box 1 and 2
+            var n1 = document.getElementById("num1")
+            var n2 = document.getElementById("num2")
+            //selecting span in paragraph
+            var result = document.getElementById("result")    
+
+            function resultfunc() {
+                //getting values of input box and converting into NUMBER
+                var n1value = Number(n1.value)
+                var n2value = Number(n2.value)
+
+
+                //adding numbers in the input boxes
+                var total = n1value+n2value
+                //displaying the total in the span
+                result.textContent = total
+            }
+
+        </script>
+    </body>
+</html>
+

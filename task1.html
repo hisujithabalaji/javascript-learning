@@ -1,0 +1,23 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title></title>
+        <link rel="stylesheet" href="">
+      </head>
+      <body>
+        <input type="text" id="inputElement" onkeyup="display()">
+        <!-- <button onclick="display()">Btn</button> -->
+        <h1 id="outputElement">Not Started</h1>
+
+        <script>
+            var inputElement = document.getElementById("inputElement");
+            var outputElement = document.getElementById("outputElement");
+
+            function display() {
+                var inputValue = inputElement.value;
+                outputElement.textContent = inputValue;
+            }
+            
+        </script>
+      </body>
+    </html>

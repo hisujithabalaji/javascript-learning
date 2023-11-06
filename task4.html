@@ -1,0 +1,21 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title></title>
+        <link rel="stylesheet" href="">
+      </head>
+      <body>
+        <h1 id="name">Name</h1>
+        <button onclick="displayName(event)">Geetha</button>
+        <button onclick="displayName(event)">Aaru</button>
+        <button onclick="displayName(event)">Suji</button>
+
+        <script>
+            var h1name = document.getElementById("name")
+
+            function displayName(event) {
+                h1name.textContent = event.target.textContent
+            }
+        </script>
+      </body>
+    </html>    

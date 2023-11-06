@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Guess the number</h1>
+        <input type="number" name="" id="guess">
+        <button onclick="check()">Check</button>
+        <p>You are <span id="result">not started</span></p>
+        <p>Score: <span id="score">10</span></p>
+
+
+        <script>
+            //selecting input box
+            var guessnumele = document.getElementById("guess")
+            //selecting result span
+            var result = document.getElementById("result")
+            //selecting score span
+            var score = document.getElementById("score")
+
+            var points = 10
+
+            //Generating random number
+            var randomnumber = Math.floor(Math.random()*10)+1
+
+            function check(){
+                var guessnumber = Number(guessnumele.value)
+                if(randomnumber==guessnumber){
+                    result.textContent = "Right"
+                    alert("You Won...\nRefersh page to play again")
+                }
+                else {
+                    points = points-1
+                    score.textContent = points
+                    result.textContent = "Wrong"
+                    if(points==0) {
+                        alert("You lost all chances....\nRefersh page to play again")
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
